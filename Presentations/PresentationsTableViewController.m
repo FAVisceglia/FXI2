@@ -305,6 +305,14 @@
 
 #pragma mark - Target Actions
 
+- (IBAction)searchButtonTouched:(UIBarButtonItem *)sender
+{
+    [[self tableView] setContentOffset:CGPointMake(0.0f, -self.tableView.contentInset.top)
+                              animated:NO];
+    [[self searchDisplayController] setActive:YES
+                                     animated:YES];
+    [[[self searchDisplayController] searchBar] becomeFirstResponder];
+}
 
 #pragma mark - Private Methods
 /**

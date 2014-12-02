@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="86a-Q3-h3F">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Search presentations" id="86a-Q3-h3F">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -34,7 +34,13 @@
                             <outlet property="delegate" destination="v9h-8J-nCL" id="CTy-sG-Qdd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="FXI Presentations" id="lhu-Ot-Wem"/>
+                    <navigationItem key="navigationItem" title="FXI Presentations" id="lhu-Ot-Wem">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="mCZ-kq-whJ">
+                            <connections>
+                                <action selector="searchButtonTouched:" destination="v9h-8J-nCL" id="gOc-4e-UgG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchDisplayController" destination="VHt-WE-NFe" id="Jgc-tV-XFg"/>
                     </connections>

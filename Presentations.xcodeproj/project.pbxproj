@@ -17,6 +17,8 @@
 		72EE55131A2E180A00BDF2F2 /* PresentationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */; };
 		72EE55161A2E1A2700BDF2F2 /* FXIPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE55151A2E1A2700BDF2F2 /* FXIPresentation.m */; };
 		72EE55181A2E1BC100BDF2F2 /* AppleTV_setup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */; };
+		72EE551B1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE551A1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m */; };
+		72EE551E1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE551D1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		72EE55141A2E1A2700BDF2F2 /* FXIPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXIPresentation.h; sourceTree = "<group>"; };
 		72EE55151A2E1A2700BDF2F2 /* FXIPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXIPresentation.m; sourceTree = "<group>"; };
 		72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AppleTV_setup.pdf; path = Resources/AppleTV_setup.pdf; sourceTree = "<group>"; };
+		72EE55191A2E388C00BDF2F2 /* PresentationsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationsCollectionViewController.h; sourceTree = "<group>"; };
+		72EE551A1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationsCollectionViewController.m; sourceTree = "<group>"; };
+		72EE551C1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationsCollectionViewCell.h; sourceTree = "<group>"; };
+		72EE551D1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationsCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,8 @@
 			children = (
 				72EE55111A2E180A00BDF2F2 /* PresentationsTableViewController.h */,
 				72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */,
+				72EE55191A2E388C00BDF2F2 /* PresentationsCollectionViewController.h */,
+				72EE551A1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +158,8 @@
 		72EE550C1A2E165500BDF2F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				72EE551C1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.h */,
+				72EE551D1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -267,6 +277,8 @@
 			files = (
 				72A807AB1A2E15430064ABE4 /* AppDelegate.m in Sources */,
 				72EE55131A2E180A00BDF2F2 /* PresentationsTableViewController.m in Sources */,
+				72EE551E1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m in Sources */,
+				72EE551B1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m in Sources */,
 				72A807A81A2E15430064ABE4 /* main.m in Sources */,
 				72EE55161A2E1A2700BDF2F2 /* FXIPresentation.m in Sources */,
 			);
