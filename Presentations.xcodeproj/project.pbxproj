@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		72A807A81A2E15430064ABE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A807A71A2E15430064ABE4 /* main.m */; };
 		72A807AB1A2E15430064ABE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A807AA1A2E15430064ABE4 /* AppDelegate.m */; };
-		72A807AE1A2E15430064ABE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A807AD1A2E15430064ABE4 /* ViewController.m */; };
 		72A807B11A2E15430064ABE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A807AF1A2E15430064ABE4 /* Main.storyboard */; };
 		72A807B31A2E15430064ABE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A807B21A2E15430064ABE4 /* Images.xcassets */; };
 		72A807B61A2E15430064ABE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A807B41A2E15430064ABE4 /* LaunchScreen.xib */; };
 		72A807C21A2E15430064ABE4 /* PresentationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A807C11A2E15430064ABE4 /* PresentationsTests.m */; };
+		72EE55101A2E171B00BDF2F2 /* Main~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EE550E1A2E171B00BDF2F2 /* Main~ipad.storyboard */; };
+		72EE55131A2E180A00BDF2F2 /* PresentationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */; };
+		72EE55161A2E1A2700BDF2F2 /* FXIPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE55151A2E1A2700BDF2F2 /* FXIPresentation.m */; };
+		72EE55181A2E1BC100BDF2F2 /* AppleTV_setup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,18 @@
 		72A807A71A2E15430064ABE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A807A91A2E15430064ABE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		72A807AA1A2E15430064ABE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		72A807AC1A2E15430064ABE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		72A807AD1A2E15430064ABE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		72A807B01A2E15430064ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72A807B21A2E15430064ABE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		72A807B51A2E15430064ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		72A807BB1A2E15430064ABE4 /* PresentationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A807C01A2E15430064ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A807C11A2E15430064ABE4 /* PresentationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationsTests.m; sourceTree = "<group>"; };
+		72EE550F1A2E171B00BDF2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main~ipad.storyboard"; sourceTree = "<group>"; };
+		72EE55111A2E180A00BDF2F2 /* PresentationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationsTableViewController.h; sourceTree = "<group>"; };
+		72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationsTableViewController.m; sourceTree = "<group>"; };
+		72EE55141A2E1A2700BDF2F2 /* FXIPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXIPresentation.h; sourceTree = "<group>"; };
+		72EE55151A2E1A2700BDF2F2 /* FXIPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXIPresentation.m; sourceTree = "<group>"; };
+		72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AppleTV_setup.pdf; path = Resources/AppleTV_setup.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +88,14 @@
 		72A807A41A2E15430064ABE4 /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
-				72A807A91A2E15430064ABE4 /* AppDelegate.h */,
-				72A807AA1A2E15430064ABE4 /* AppDelegate.m */,
-				72A807AC1A2E15430064ABE4 /* ViewController.h */,
-				72A807AD1A2E15430064ABE4 /* ViewController.m */,
 				72A807AF1A2E15430064ABE4 /* Main.storyboard */,
-				72A807B21A2E15430064ABE4 /* Images.xcassets */,
+				72EE550E1A2E171B00BDF2F2 /* Main~ipad.storyboard */,
 				72A807B41A2E15430064ABE4 /* LaunchScreen.xib */,
+				72A807B21A2E15430064ABE4 /* Images.xcassets */,
+				72EE550A1A2E164600BDF2F2 /* Controllers */,
+				72EE550B1A2E164E00BDF2F2 /* Model */,
+				72EE550C1A2E165500BDF2F2 /* Views */,
+				72EE550D1A2E165B00BDF2F2 /* Resources */,
 				72A807A51A2E15430064ABE4 /* Supporting Files */,
 			);
 			path = Presentations;
@@ -96,6 +104,8 @@
 		72A807A51A2E15430064ABE4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				72A807A91A2E15430064ABE4 /* AppDelegate.h */,
+				72A807AA1A2E15430064ABE4 /* AppDelegate.m */,
 				72A807A61A2E15430064ABE4 /* Info.plist */,
 				72A807A71A2E15430064ABE4 /* main.m */,
 			);
@@ -117,6 +127,39 @@
 				72A807C01A2E15430064ABE4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72EE550A1A2E164600BDF2F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72EE55111A2E180A00BDF2F2 /* PresentationsTableViewController.h */,
+				72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		72EE550B1A2E164E00BDF2F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72EE55141A2E1A2700BDF2F2 /* FXIPresentation.h */,
+				72EE55151A2E1A2700BDF2F2 /* FXIPresentation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		72EE550C1A2E165500BDF2F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		72EE550D1A2E165B00BDF2F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +211,7 @@
 				TargetAttributes = {
 					72A807A11A2E15430064ABE4 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 8BXF99CR59;
 					};
 					72A807BA1A2E15430064ABE4 = {
 						CreatedOnToolsVersion = 6.1;
@@ -199,9 +243,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EE55101A2E171B00BDF2F2 /* Main~ipad.storyboard in Resources */,
 				72A807B11A2E15430064ABE4 /* Main.storyboard in Resources */,
 				72A807B61A2E15430064ABE4 /* LaunchScreen.xib in Resources */,
 				72A807B31A2E15430064ABE4 /* Images.xcassets in Resources */,
+				72EE55181A2E1BC100BDF2F2 /* AppleTV_setup.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A807AE1A2E15430064ABE4 /* ViewController.m in Sources */,
 				72A807AB1A2E15430064ABE4 /* AppDelegate.m in Sources */,
+				72EE55131A2E180A00BDF2F2 /* PresentationsTableViewController.m in Sources */,
 				72A807A81A2E15430064ABE4 /* main.m in Sources */,
+				72EE55161A2E1A2700BDF2F2 /* FXIPresentation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +305,14 @@
 				72A807B51A2E15430064ABE4 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		72EE550E1A2E171B00BDF2F2 /* Main~ipad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72EE550F1A2E171B00BDF2F2 /* Base */,
+			);
+			name = "Main~ipad.storyboard";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -345,9 +400,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Presentations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -355,9 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Presentations/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -414,6 +477,7 @@
 				72A807C71A2E15430064ABE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72A807C81A2E15430064ABE4 /* Build configuration list for PBXNativeTarget "PresentationsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +486,7 @@
 				72A807CA1A2E15430064ABE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
