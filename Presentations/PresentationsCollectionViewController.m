@@ -68,6 +68,22 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
         presentation = [[FXIPresentation alloc] initWithURL:fileURL];
         [[self presentations] addObject:presentation];
     }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"01 Corporate Overview"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"06 Cores Collection with Script"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
 }
 
 - (void)didReceiveMemoryWarning

@@ -73,6 +73,22 @@
         [[self presentations] addObject:presentation];
     }
     
+    fileURL = [[NSBundle mainBundle] URLForResource:@"01 Corporate Overview"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"06 Cores Collection with Script"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
     // Hides search bar on view load by offsetting the table (scrolling it down)
     [[self tableView] setContentOffset:CGPointMake(0, [[[self searchDisplayController] searchBar] frame].size.height - [[self tableView] contentOffset].y)];
     

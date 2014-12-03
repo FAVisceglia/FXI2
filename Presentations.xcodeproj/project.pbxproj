@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7229B3061A2F4778006126F4 /* 01 Corporate Overview.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B2FB1A2F4778006126F4 /* 01 Corporate Overview.pdf */; };
+		7229B3071A2F4778006126F4 /* 02 FXI Overview-TECH.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B2FC1A2F4778006126F4 /* 02 FXI Overview-TECH.pdf */; };
+		7229B3081A2F4778006126F4 /* 03 Activus Presentation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B2FD1A2F4778006126F4 /* 03 Activus Presentation.pdf */; };
+		7229B3091A2F4778006126F4 /* 04 Aerus Presentation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B2FE1A2F4778006126F4 /* 04 Aerus Presentation.pdf */; };
+		7229B30A1A2F4778006126F4 /* 05 Altus Presentation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B2FF1A2F4778006126F4 /* 05 Altus Presentation.pdf */; };
+		7229B30B1A2F4778006126F4 /* 06 Cores Collection with Script.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B3001A2F4778006126F4 /* 06 Cores Collection with Script.pdf */; };
+		7229B30C1A2F4778006126F4 /* 07 Cores Collections.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B3011A2F4778006126F4 /* 07 Cores Collections.pdf */; };
+		7229B30D1A2F4778006126F4 /* 08 MAXPERM Presentation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B3021A2F4778006126F4 /* 08 MAXPERM Presentation.pdf */; };
+		7229B30E1A2F4778006126F4 /* 09 MemGel Presentation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B3031A2F4778006126F4 /* 09 MemGel Presentation.pdf */; };
+		7229B30F1A2F4778006126F4 /* 10 TRF System.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B3041A2F4778006126F4 /* 10 TRF System.pdf */; };
+		7229B3101A2F4778006126F4 /* 11 TRF System with Foams.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7229B3051A2F4778006126F4 /* 11 TRF System with Foams.pdf */; };
 		72A807A81A2E15430064ABE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A807A71A2E15430064ABE4 /* main.m */; };
 		72A807AB1A2E15430064ABE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A807AA1A2E15430064ABE4 /* AppDelegate.m */; };
 		72A807B11A2E15430064ABE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A807AF1A2E15430064ABE4 /* Main.storyboard */; };
@@ -32,6 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7229B2FB1A2F4778006126F4 /* 01 Corporate Overview.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "01 Corporate Overview.pdf"; path = "Resources/Presentations/01 Corporate Overview.pdf"; sourceTree = "<group>"; };
+		7229B2FC1A2F4778006126F4 /* 02 FXI Overview-TECH.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "02 FXI Overview-TECH.pdf"; path = "Resources/Presentations/02 FXI Overview-TECH.pdf"; sourceTree = "<group>"; };
+		7229B2FD1A2F4778006126F4 /* 03 Activus Presentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "03 Activus Presentation.pdf"; path = "Resources/Presentations/03 Activus Presentation.pdf"; sourceTree = "<group>"; };
+		7229B2FE1A2F4778006126F4 /* 04 Aerus Presentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "04 Aerus Presentation.pdf"; path = "Resources/Presentations/04 Aerus Presentation.pdf"; sourceTree = "<group>"; };
+		7229B2FF1A2F4778006126F4 /* 05 Altus Presentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "05 Altus Presentation.pdf"; path = "Resources/Presentations/05 Altus Presentation.pdf"; sourceTree = "<group>"; };
+		7229B3001A2F4778006126F4 /* 06 Cores Collection with Script.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "06 Cores Collection with Script.pdf"; path = "Resources/Presentations/06 Cores Collection with Script.pdf"; sourceTree = "<group>"; };
+		7229B3011A2F4778006126F4 /* 07 Cores Collections.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "07 Cores Collections.pdf"; path = "Resources/Presentations/07 Cores Collections.pdf"; sourceTree = "<group>"; };
+		7229B3021A2F4778006126F4 /* 08 MAXPERM Presentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "08 MAXPERM Presentation.pdf"; path = "Resources/Presentations/08 MAXPERM Presentation.pdf"; sourceTree = "<group>"; };
+		7229B3031A2F4778006126F4 /* 09 MemGel Presentation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "09 MemGel Presentation.pdf"; path = "Resources/Presentations/09 MemGel Presentation.pdf"; sourceTree = "<group>"; };
+		7229B3041A2F4778006126F4 /* 10 TRF System.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "10 TRF System.pdf"; path = "Resources/Presentations/10 TRF System.pdf"; sourceTree = "<group>"; };
+		7229B3051A2F4778006126F4 /* 11 TRF System with Foams.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "11 TRF System with Foams.pdf"; path = "Resources/Presentations/11 TRF System with Foams.pdf"; sourceTree = "<group>"; };
 		72A807A21A2E15430064ABE4 /* Presentations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presentations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A807A61A2E15430064ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A807A71A2E15430064ABE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -168,6 +190,17 @@
 			isa = PBXGroup;
 			children = (
 				72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */,
+				7229B2FB1A2F4778006126F4 /* 01 Corporate Overview.pdf */,
+				7229B2FC1A2F4778006126F4 /* 02 FXI Overview-TECH.pdf */,
+				7229B2FD1A2F4778006126F4 /* 03 Activus Presentation.pdf */,
+				7229B2FE1A2F4778006126F4 /* 04 Aerus Presentation.pdf */,
+				7229B2FF1A2F4778006126F4 /* 05 Altus Presentation.pdf */,
+				7229B3001A2F4778006126F4 /* 06 Cores Collection with Script.pdf */,
+				7229B3011A2F4778006126F4 /* 07 Cores Collections.pdf */,
+				7229B3021A2F4778006126F4 /* 08 MAXPERM Presentation.pdf */,
+				7229B3031A2F4778006126F4 /* 09 MemGel Presentation.pdf */,
+				7229B3041A2F4778006126F4 /* 10 TRF System.pdf */,
+				7229B3051A2F4778006126F4 /* 11 TRF System with Foams.pdf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -254,10 +287,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				72EE55101A2E171B00BDF2F2 /* Main~ipad.storyboard in Resources */,
+				7229B30F1A2F4778006126F4 /* 10 TRF System.pdf in Resources */,
+				7229B3081A2F4778006126F4 /* 03 Activus Presentation.pdf in Resources */,
 				72A807B11A2E15430064ABE4 /* Main.storyboard in Resources */,
+				7229B30A1A2F4778006126F4 /* 05 Altus Presentation.pdf in Resources */,
+				7229B3071A2F4778006126F4 /* 02 FXI Overview-TECH.pdf in Resources */,
+				7229B3061A2F4778006126F4 /* 01 Corporate Overview.pdf in Resources */,
+				7229B30D1A2F4778006126F4 /* 08 MAXPERM Presentation.pdf in Resources */,
 				72A807B61A2E15430064ABE4 /* LaunchScreen.xib in Resources */,
+				7229B3101A2F4778006126F4 /* 11 TRF System with Foams.pdf in Resources */,
+				7229B30B1A2F4778006126F4 /* 06 Cores Collection with Script.pdf in Resources */,
 				72A807B31A2E15430064ABE4 /* Images.xcassets in Resources */,
 				72EE55181A2E1BC100BDF2F2 /* AppleTV_setup.pdf in Resources */,
+				7229B30C1A2F4778006126F4 /* 07 Cores Collections.pdf in Resources */,
+				7229B30E1A2F4778006126F4 /* 09 MemGel Presentation.pdf in Resources */,
+				7229B3091A2F4778006126F4 /* 04 Aerus Presentation.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
