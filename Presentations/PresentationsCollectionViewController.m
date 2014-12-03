@@ -176,7 +176,12 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
         NSURL *url = [presentation presentationURL];
         UIDocumentInteractionController *controller = [UIDocumentInteractionController interactionControllerWithURL:url];
         [controller setDelegate:self];
-        [controller presentPreviewAnimated:YES];
+
+        BOOL previewDidPresent = [controller presentPreviewAnimated:YES];
+        if (!previewDidPresent)
+        {
+            // error
+        }
     }
 }
 
