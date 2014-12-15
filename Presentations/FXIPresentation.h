@@ -10,6 +10,7 @@
 
 @interface FXIPresentation : NSObject
 
+
 #pragma mark - Public Properties
 
 // The URL of the locally-stored presentation (read & write)
@@ -17,6 +18,7 @@
 
 // The title of the presentation (read only)
 @property (copy, nonatomic, readonly) NSString *title;
+
 
 #pragma mark - Public Methods
 

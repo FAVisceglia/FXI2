@@ -65,7 +65,7 @@
     
     FXIPresentation *presentation = nil;
     
-    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"AppleTV_setup"
+    NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"01 Corporate Overview"
                                              withExtension:@"pdf"];
     if (fileURL)
     {
@@ -73,7 +73,31 @@
         [[self presentations] addObject:presentation];
     }
     
-    fileURL = [[NSBundle mainBundle] URLForResource:@"01 Corporate Overview"
+    fileURL = [[NSBundle mainBundle] URLForResource:@"02 FXI Overview-TECH"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"03 Activus Presentation"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"04 Aerus Presentation"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"05 Altus Presentation"
                                       withExtension:@"pdf"];
     if (fileURL)
     {
@@ -82,6 +106,46 @@
     }
     
     fileURL = [[NSBundle mainBundle] URLForResource:@"06 Cores Collection with Script"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"07 Cores Collections"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"08 MAXPERM Presentation"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"09 MemGel Presentation"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"10 TRF System"
+                                      withExtension:@"pdf"];
+    if (fileURL)
+    {
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        [[self presentations] addObject:presentation];
+    }
+    
+    fileURL = [[NSBundle mainBundle] URLForResource:@"11 TRF System with Foams"
                                       withExtension:@"pdf"];
     if (fileURL)
     {
@@ -202,7 +266,7 @@
      [[cell textLabel] setLineBreakMode:NSLineBreakByWordWrapping];
      [[cell textLabel] setNumberOfLines:0];
      [[cell textLabel] setFont:[UIFont preferredFontForTextStyle:UIFontTextStyleBody]];**/
-    [[cell textLabel] setText:[presentation title]];
+    [[cell textLabel] setText:[[presentation title] substringFromIndex:3]];
     [[cell textLabel] setTextColor:[UIColor colorWithRed:(18.0/255.0)
                                                    green:(52.0/255.0)
                                                     blue:(88.0/255.0)

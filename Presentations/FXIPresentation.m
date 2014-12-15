@@ -10,6 +10,7 @@
 
 @interface FXIPresentation()
 
+
 #pragma mark - Private Properties
 
 // Read & write extension of the public title
@@ -21,6 +22,7 @@
 #pragma mark
 
 @implementation FXIPresentation
+
 
 #pragma mark - Setters
 
@@ -44,6 +46,7 @@
     }
 }
 
+
 #pragma mark - Initializers
 
 - (instancetype)initWithURL:(NSURL *)urlOfPresentation
@@ -57,6 +60,7 @@
     
     return self;
 }
+
 
 #pragma mark - Private Methods
 
