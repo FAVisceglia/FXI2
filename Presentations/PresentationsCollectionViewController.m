@@ -111,7 +111,7 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
         presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
-    
+/**
     fileURL = [[NSBundle mainBundle] URLForResource:@"06 Cores Collection with Script"
                                       withExtension:@"pdf"];
     if (fileURL)
@@ -131,7 +131,7 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
         presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
-    
+ */
     fileURL = [[NSBundle mainBundle] URLForResource:@"08 MAXPERM Presentation"
                                       withExtension:@"pdf"];
     if (fileURL)
