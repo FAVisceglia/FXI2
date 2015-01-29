@@ -19,10 +19,16 @@
 // The title of the presentation (read only)
 @property (copy, nonatomic, readonly) NSString *title;
 
+// The URL of the locally-stored thumbnail (read & write)
+@property (strong, nonatomic) NSURL *thumbnailURL;
+
 
 #pragma mark - Public Methods
 
 // Designated initializer; create a new presentation from a file stored at the given URL
 - (instancetype)initWithURL:(NSURL *)urlOfPresentation;
+
+// 
+- (instancetype)initWithURL:(NSURL *)urlOfPresentation withThumbnail:(NSURL *)urlOfThumbnail;
 
 @end

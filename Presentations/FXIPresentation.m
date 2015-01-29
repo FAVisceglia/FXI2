@@ -61,6 +61,19 @@
     return self;
 }
 
+- (instancetype)initWithURL:(NSURL *)urlOfPresentation withThumbnail:(NSURL *)urlOfThumbnail
+{
+    self = [super init];
+    
+    if (self)
+    {
+        [self setPresentationURL:urlOfPresentation];
+        [self setThumbnailURL:urlOfThumbnail];
+    }
+    
+    return self;
+}
+
 
 #pragma mark - Private Methods
 

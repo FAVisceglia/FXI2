@@ -60,12 +60,15 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
     // array
     
     FXIPresentation *presentation = nil;
+    NSURL *thumbnailURL = nil;
     
     NSURL *fileURL = [[NSBundle mainBundle] URLForResource:@"01 Corporate Overview"
                                              withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"overview"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -73,7 +76,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"overviewtech"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -81,7 +86,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"activus"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -89,7 +96,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"aerus"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -97,7 +106,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"altus"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -105,7 +116,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"ccwithscript"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -113,7 +126,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"corecollection"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -121,7 +136,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"maxperm"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -129,7 +146,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"memgel"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -137,7 +156,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"trf"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
     
@@ -145,7 +166,9 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
                                       withExtension:@"pdf"];
     if (fileURL)
     {
-        presentation = [[FXIPresentation alloc] initWithURL:fileURL];
+        thumbnailURL = [[NSBundle mainBundle] URLForResource:@"trf"
+                                               withExtension:@"png"];
+        presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
 }
@@ -191,14 +214,18 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
     
     // Set cells
     
-    [[cell presentationThumbnailButton] setBackgroundImage:[UIDocumentInteractionController interactionControllerWithURL:[presentation presentationURL]].icons[1]
+/**    [[cell presentationThumbnailButton] setBackgroundImage:[UIDocumentInteractionController interactionControllerWithURL:[presentation presentationURL]].icons[1]
+                                                  forState:UIControlStateNormal];*/
+    UIImage *thumbnail = [UIImage imageWithData:[NSData dataWithContentsOfURL:[presentation thumbnailURL]]];
+    
+    [[cell presentationThumbnailButton] setBackgroundImage:[UIImage imageWithData:UIImagePNGRepresentation(thumbnail)]
                                                   forState:UIControlStateNormal];
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [paragraphStyle setHyphenationFactor:1.0f];
     [paragraphStyle setAlignment:NSTextAlignmentCenter];
     [paragraphStyle setLineBreakMode:NSLineBreakByTruncatingTail];
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[presentation title]
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[[presentation title] substringFromIndex:3]
                                                                                          attributes:@{
                                                                                                       NSParagraphStyleAttributeName : paragraphStyle
                                                                                                       }];

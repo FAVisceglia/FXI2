@@ -27,9 +27,18 @@
 		72EE55101A2E171B00BDF2F2 /* Main~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EE550E1A2E171B00BDF2F2 /* Main~ipad.storyboard */; };
 		72EE55131A2E180A00BDF2F2 /* PresentationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */; };
 		72EE55161A2E1A2700BDF2F2 /* FXIPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE55151A2E1A2700BDF2F2 /* FXIPresentation.m */; };
-		72EE55181A2E1BC100BDF2F2 /* AppleTV_setup.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */; };
 		72EE551B1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE551A1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m */; };
 		72EE551E1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE551D1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m */; };
+		72F074B71A791A10005F7E75 /* activus.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074AD1A791A10005F7E75 /* activus.png */; };
+		72F074B81A791A10005F7E75 /* aerus.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074AE1A791A10005F7E75 /* aerus.png */; };
+		72F074B91A791A10005F7E75 /* altus.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074AF1A791A10005F7E75 /* altus.png */; };
+		72F074BA1A791A10005F7E75 /* ccwithscript.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074B01A791A10005F7E75 /* ccwithscript.png */; };
+		72F074BB1A791A10005F7E75 /* corecollection.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074B11A791A10005F7E75 /* corecollection.png */; };
+		72F074BC1A791A10005F7E75 /* maxperm.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074B21A791A10005F7E75 /* maxperm.png */; };
+		72F074BD1A791A10005F7E75 /* memgel.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074B31A791A10005F7E75 /* memgel.png */; };
+		72F074BE1A791A10005F7E75 /* overview.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074B41A791A10005F7E75 /* overview.png */; };
+		72F074BF1A791A10005F7E75 /* overviewtech.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074B51A791A10005F7E75 /* overviewtech.png */; };
+		72F074C01A791A10005F7E75 /* trf.png in Resources */ = {isa = PBXBuildFile; fileRef = 72F074B61A791A10005F7E75 /* trf.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,11 +79,20 @@
 		72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationsTableViewController.m; sourceTree = "<group>"; };
 		72EE55141A2E1A2700BDF2F2 /* FXIPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXIPresentation.h; sourceTree = "<group>"; };
 		72EE55151A2E1A2700BDF2F2 /* FXIPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXIPresentation.m; sourceTree = "<group>"; };
-		72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = AppleTV_setup.pdf; path = Resources/AppleTV_setup.pdf; sourceTree = "<group>"; };
 		72EE55191A2E388C00BDF2F2 /* PresentationsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationsCollectionViewController.h; sourceTree = "<group>"; };
 		72EE551A1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationsCollectionViewController.m; sourceTree = "<group>"; };
 		72EE551C1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationsCollectionViewCell.h; sourceTree = "<group>"; };
 		72EE551D1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationsCollectionViewCell.m; sourceTree = "<group>"; };
+		72F074AD1A791A10005F7E75 /* activus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = activus.png; path = Resources/Icons/activus.png; sourceTree = "<group>"; };
+		72F074AE1A791A10005F7E75 /* aerus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aerus.png; path = Resources/Icons/aerus.png; sourceTree = "<group>"; };
+		72F074AF1A791A10005F7E75 /* altus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = altus.png; path = Resources/Icons/altus.png; sourceTree = "<group>"; };
+		72F074B01A791A10005F7E75 /* ccwithscript.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ccwithscript.png; path = Resources/Icons/ccwithscript.png; sourceTree = "<group>"; };
+		72F074B11A791A10005F7E75 /* corecollection.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = corecollection.png; path = Resources/Icons/corecollection.png; sourceTree = "<group>"; };
+		72F074B21A791A10005F7E75 /* maxperm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maxperm.png; path = Resources/Icons/maxperm.png; sourceTree = "<group>"; };
+		72F074B31A791A10005F7E75 /* memgel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = memgel.png; path = Resources/Icons/memgel.png; sourceTree = "<group>"; };
+		72F074B41A791A10005F7E75 /* overview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overview.png; path = Resources/Icons/overview.png; sourceTree = "<group>"; };
+		72F074B51A791A10005F7E75 /* overviewtech.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overviewtech.png; path = Resources/Icons/overviewtech.png; sourceTree = "<group>"; };
+		72F074B61A791A10005F7E75 /* trf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trf.png; path = Resources/Icons/trf.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +207,6 @@
 		72EE550D1A2E165B00BDF2F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				72EE55171A2E1BC100BDF2F2 /* AppleTV_setup.pdf */,
 				7229B2FB1A2F4778006126F4 /* 01 Corporate Overview.pdf */,
 				7229B2FC1A2F4778006126F4 /* 02 FXI Overview-TECH.pdf */,
 				7229B2FD1A2F4778006126F4 /* 03 Activus Presentation.pdf */,
@@ -201,6 +218,16 @@
 				7229B3031A2F4778006126F4 /* 09 MemGel Presentation.pdf */,
 				7229B3041A2F4778006126F4 /* 10 TRF System.pdf */,
 				7229B3051A2F4778006126F4 /* 11 TRF System with Foams.pdf */,
+				72F074AD1A791A10005F7E75 /* activus.png */,
+				72F074AE1A791A10005F7E75 /* aerus.png */,
+				72F074AF1A791A10005F7E75 /* altus.png */,
+				72F074B01A791A10005F7E75 /* ccwithscript.png */,
+				72F074B11A791A10005F7E75 /* corecollection.png */,
+				72F074B21A791A10005F7E75 /* maxperm.png */,
+				72F074B31A791A10005F7E75 /* memgel.png */,
+				72F074B41A791A10005F7E75 /* overview.png */,
+				72F074B51A791A10005F7E75 /* overviewtech.png */,
+				72F074B61A791A10005F7E75 /* trf.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -288,19 +315,28 @@
 			files = (
 				72EE55101A2E171B00BDF2F2 /* Main~ipad.storyboard in Resources */,
 				7229B30F1A2F4778006126F4 /* 10 TRF System.pdf in Resources */,
+				72F074B81A791A10005F7E75 /* aerus.png in Resources */,
+				72F074B71A791A10005F7E75 /* activus.png in Resources */,
 				7229B3081A2F4778006126F4 /* 03 Activus Presentation.pdf in Resources */,
 				72A807B11A2E15430064ABE4 /* Main.storyboard in Resources */,
 				7229B30A1A2F4778006126F4 /* 05 Altus Presentation.pdf in Resources */,
 				7229B3071A2F4778006126F4 /* 02 FXI Overview-TECH.pdf in Resources */,
 				7229B3061A2F4778006126F4 /* 01 Corporate Overview.pdf in Resources */,
 				7229B30D1A2F4778006126F4 /* 08 MAXPERM Presentation.pdf in Resources */,
+				72F074BA1A791A10005F7E75 /* ccwithscript.png in Resources */,
+				72F074BB1A791A10005F7E75 /* corecollection.png in Resources */,
 				72A807B61A2E15430064ABE4 /* LaunchScreen.xib in Resources */,
 				7229B3101A2F4778006126F4 /* 11 TRF System with Foams.pdf in Resources */,
 				7229B30B1A2F4778006126F4 /* 06 Cores Collection with Script.pdf in Resources */,
 				72A807B31A2E15430064ABE4 /* Images.xcassets in Resources */,
-				72EE55181A2E1BC100BDF2F2 /* AppleTV_setup.pdf in Resources */,
+				72F074BC1A791A10005F7E75 /* maxperm.png in Resources */,
+				72F074B91A791A10005F7E75 /* altus.png in Resources */,
+				72F074BD1A791A10005F7E75 /* memgel.png in Resources */,
 				7229B30C1A2F4778006126F4 /* 07 Cores Collections.pdf in Resources */,
 				7229B30E1A2F4778006126F4 /* 09 MemGel Presentation.pdf in Resources */,
+				72F074C01A791A10005F7E75 /* trf.png in Resources */,
+				72F074BF1A791A10005F7E75 /* overviewtech.png in Resources */,
+				72F074BE1A791A10005F7E75 /* overview.png in Resources */,
 				7229B3091A2F4778006126F4 /* 04 Aerus Presentation.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
