@@ -22,6 +22,7 @@
 		72A807B31A2E15430064ABE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A807B21A2E15430064ABE4 /* Images.xcassets */; };
 		72A807B61A2E15430064ABE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72A807B41A2E15430064ABE4 /* LaunchScreen.xib */; };
 		72A807C21A2E15430064ABE4 /* PresentationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A807C11A2E15430064ABE4 /* PresentationsTests.m */; };
+		72B18EA81A850AF8000B7466 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B18EA71A850AF8000B7466 /* SearchResultsTableViewController.m */; };
 		72EE55101A2E171B00BDF2F2 /* Main~ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72EE550E1A2E171B00BDF2F2 /* Main~ipad.storyboard */; };
 		72EE55131A2E180A00BDF2F2 /* PresentationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */; };
 		72EE55161A2E1A2700BDF2F2 /* FXIPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EE55151A2E1A2700BDF2F2 /* FXIPresentation.m */; };
@@ -68,6 +69,8 @@
 		72A807BB1A2E15430064ABE4 /* PresentationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A807C01A2E15430064ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A807C11A2E15430064ABE4 /* PresentationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentationsTests.m; sourceTree = "<group>"; };
+		72B18EA61A850AF8000B7466 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		72B18EA71A850AF8000B7466 /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
 		72EE550F1A2E171B00BDF2F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Main~ipad.storyboard"; sourceTree = "<group>"; };
 		72EE55111A2E180A00BDF2F2 /* PresentationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationsTableViewController.h; sourceTree = "<group>"; };
 		72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationsTableViewController.m; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				72EE55121A2E180A00BDF2F2 /* PresentationsTableViewController.m */,
 				72EE55191A2E388C00BDF2F2 /* PresentationsCollectionViewController.h */,
 				72EE551A1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m */,
+				72B18EA61A850AF8000B7466 /* SearchResultsTableViewController.h */,
+				72B18EA71A850AF8000B7466 /* SearchResultsTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				72A807AB1A2E15430064ABE4 /* AppDelegate.m in Sources */,
 				72EE55131A2E180A00BDF2F2 /* PresentationsTableViewController.m in Sources */,
 				72EE551E1A2E38BF00BDF2F2 /* PresentationsCollectionViewCell.m in Sources */,
+				72B18EA81A850AF8000B7466 /* SearchResultsTableViewController.m in Sources */,
 				72EE551B1A2E388C00BDF2F2 /* PresentationsCollectionViewController.m in Sources */,
 				72A807A81A2E15430064ABE4 /* main.m in Sources */,
 				72EE55161A2E1A2700BDF2F2 /* FXIPresentation.m in Sources */,

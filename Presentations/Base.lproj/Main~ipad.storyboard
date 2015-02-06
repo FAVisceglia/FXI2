@@ -58,7 +58,13 @@ Label</string>
                             <outlet property="delegate" destination="vwC-kL-ijO" id="s8T-B9-nJ9"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="FXI Presentations" id="Civ-R6-ByM"/>
+                    <navigationItem key="navigationItem" title="FXI Presentations" id="Civ-R6-ByM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="EQx-Th-8ae">
+                            <connections>
+                                <action selector="searchButtonPressed:" destination="vwC-kL-ijO" id="0GE-ga-wDZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YH4-rv-1PL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,6 +9,7 @@
 #import "PresentationsCollectionViewController.h"
 #import "FXIPresentation.h"
 #import "PresentationsCollectionViewCell.h"
+#import "SearchResultsTableViewController.h"
 
 @interface PresentationsCollectionViewController()
 
@@ -269,6 +270,15 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
     
     return reusableView;
 }**/
+
+- (IBAction)searchButtonPressed:(UIBarButtonItem *)sender
+{
+    SearchResultsTableViewController *searchTableViewController = [[SearchResultsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [searchTableViewController setFullResults:[self presentations]];
+    
+    UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:searchTableViewController];
+    [popoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+}
 
 - (IBAction)displayPDF:(UIButton *)sender
 {
