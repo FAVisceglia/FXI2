@@ -57,6 +57,7 @@
     
     [self setSearchController:[[UISearchController alloc] initWithSearchResultsController:nil]];
     [[self searchController] setSearchResultsUpdater:self];
+    [[self searchController] setDimsBackgroundDuringPresentation:NO];
     
     [[[self searchController] searchBar] setFrame:CGRectMake(0.0f, 0.0f, CGRectGetWidth([[self tableView] frame]), 44.0f)];
     [[[self searchController] searchBar] setSearchBarStyle:UISearchBarStyleMinimal];
@@ -70,6 +71,15 @@
     [[self tableView] setDelegate:self];
     [[self tableView] setDataSource:self];
 }
+
+/**
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [[self searchController] setActive:YES];
+    [[[self searchController] searchBar] becomeFirstResponder];
+}*/
 
 #pragma mark - Table View Data Source
 
@@ -122,6 +132,9 @@
     UIDocumentInteractionController *controller = [UIDocumentInteractionController interactionControllerWithURL:url];
     [controller setDelegate:[self mainController]];
     [controller presentPreviewAnimated:YES];
+    
+    [[[self searchController] searchBar] setText:nil];
+    [[self searchController] setActive:NO];
 }
 
 #pragma mark - Document Interaction Delegate
