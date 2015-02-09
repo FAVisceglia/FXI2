@@ -65,6 +65,7 @@
     [[[self searchController] searchBar] setDelegate:self];
 
     [[self tableView] setTableHeaderView:[[self searchController] searchBar]];
+    [[[self tableView] tableHeaderView] setBackgroundColor:[UIColor whiteColor]];
     [[self tableView] setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [[self tableView] setAllowsSelection:YES];
     [[self tableView] setAllowsSelectionDuringEditing:YES];
@@ -128,13 +129,20 @@
     
     presentation = [[self searchResults] objectAtIndex:[indexPath row]];
     
+    NSDictionary *userInfo = @{ @"selection" : presentation };
+    
+    NSLog(@"Cell selected");
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"SelectionMadeNotification" object:nil userInfo:userInfo];
+    
+    /**
     NSURL *url = [presentation presentationURL];
     UIDocumentInteractionController *controller = [UIDocumentInteractionController interactionControllerWithURL:url];
     [controller setDelegate:[self mainController]];
     [controller presentPreviewAnimated:YES];
     
     [[[self searchController] searchBar] setText:nil];
-    [[self searchController] setActive:NO];
+    [[self searchController] setActive:NO];**/
 }
 
 #pragma mark - Document Interaction Delegate

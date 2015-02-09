@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PresentationsCollectionViewController : UICollectionViewController <UIDocumentInteractionControllerDelegate, UISearchResultsUpdating>
+@interface PresentationsCollectionViewController : UICollectionViewController <UIDocumentInteractionControllerDelegate>
 
 @property (copy, readonly, nonatomic) NSMutableArray *presentations;
 

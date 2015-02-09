@@ -18,6 +18,8 @@
 // Array of the objects to represent in the table
 @property (copy, nonatomic) NSMutableArray *presentations;
 
+@property (strong, nonatomic) UIPopoverController *searchPopoverController;
+
 @end
 
 
@@ -172,6 +174,22 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
         presentation = [[FXIPresentation alloc] initWithURL:fileURL withThumbnail:thumbnailURL];
         [[self presentations] addObject:presentation];
     }
+    
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(searchSelectionMade:) name:@"SelectionMadeNotification" object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(searchSelectionMade:) name:@"SelectionMadeNotification" object:nil];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -273,11 +291,23 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
 
 - (IBAction)searchButtonPressed:(UIBarButtonItem *)sender
 {
-    SearchResultsTableViewController *searchTableViewController = [[SearchResultsTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    [searchTableViewController setFullResults:[self presentations]];
-    
-    UIPopoverController *popoverController = [[UIPopoverController alloc] initWithContentViewController:searchTableViewController];
-    [popoverController presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    if (NSClassFromString(@"UISearchController"))
+    {
+        SearchResultsTableViewController *searchTableViewController = [[SearchResultsTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        [searchTableViewController setFullResults:[self presentations]];
+        
+        [self setSearchPopoverController:[[UIPopoverController alloc] initWithContentViewController:searchTableViewController]];
+        [[self searchPopoverController] presentPopoverFromBarButtonItem:sender permittedArrowDirections:UIPopoverArrowDirectionUp animated:YES];
+    }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Update Required"
+                                                        message:@"Searching requires iOS 8. Please update your device."
+                                                       delegate:self
+                                              cancelButtonTitle:@"Okay"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 - (IBAction)displayPDF:(UIButton *)sender
@@ -306,7 +336,7 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
 
 - (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
 {
-    return [self navigationController];
+    return self;
 }
 
 - (void)documentInteractionControllerWillBeginPreview:(UIDocumentInteractionController *)controller
@@ -362,5 +392,25 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
 	
  }
  */
+
+
+- (void)searchSelectionMade:(NSNotification *)notification
+{
+    NSLog(@"Notification received");
+    
+    FXIPresentation *presentation = [[notification userInfo] objectForKey:@"selection"];
+    
+    [[self searchPopoverController] dismissPopoverAnimated:YES];
+    
+    NSURL *url = [presentation presentationURL];
+    UIDocumentInteractionController *controller = [UIDocumentInteractionController interactionControllerWithURL:url];
+    [controller setDelegate:self];
+    
+    BOOL previewDidPresent = [controller presentPreviewAnimated:YES];
+    if (!previewDidPresent)
+    {
+        // error
+    }
+}
 
 @end
