@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchResultsTableViewController : UITableViewController <UITableViewDelegate, UISearchResultsUpdating, UISearchBarDelegate>
+@interface SearchResultsTableViewController : UITableViewController <UITableViewDelegate, UISearchResultsUpdating>
 
+// An import of the full data through which to search
 @property (copy, nonatomic) NSArray *fullResults;
 
 @end

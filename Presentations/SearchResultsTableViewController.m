@@ -15,14 +15,11 @@
 
 #pragma mark - Private Properties
 
-// Array of the objects to represent in the table
+// Array of the search results
 @property (copy, nonatomic) NSArray *searchResults;
 
 // Search controller
 @property (strong, nonatomic) UISearchController *searchController;
-
-// Primary view controller
-@property (strong, nonatomic) PresentationsCollectionViewController *mainController;
 
 @end
 
@@ -52,9 +49,6 @@
 {
     [super viewDidLoad];
     
-    // Convoluted way of getting the main window's active view controller
-    [self setMainController:(PresentationsCollectionViewController *)((UINavigationController *)[[[[UIApplication sharedApplication] delegate] window] rootViewController]).topViewController];
-    
     [self setSearchController:[[UISearchController alloc] initWithSearchResultsController:nil]];
     [[self searchController] setSearchResultsUpdater:self];
     [[self searchController] setDimsBackgroundDuringPresentation:NO];
@@ -62,7 +56,6 @@
     [[[self searchController] searchBar] setFrame:CGRectMake(0.0f, 0.0f, CGRectGetWidth([[self tableView] frame]), 44.0f)];
     [[[self searchController] searchBar] setSearchBarStyle:UISearchBarStyleMinimal];
     [[[self searchController] searchBar] setPlaceholder:@"Search Presentations"];
-    [[[self searchController] searchBar] setDelegate:self];
 
     [[self tableView] setTableHeaderView:[[self searchController] searchBar]];
     [[[self tableView] tableHeaderView] setBackgroundColor:[UIColor whiteColor]];
@@ -73,16 +66,7 @@
     [[self tableView] setDataSource:self];
 }
 
-/**
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    
-    [[self searchController] setActive:YES];
-    [[[self searchController] searchBar] becomeFirstResponder];
-}*/
-
-#pragma mark - Table View Data Source
+#pragma mark - Table View datasource
 
 // Return the number of sections in the table view
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -99,9 +83,6 @@
 // Return the cell (data) at a given index path (populates the table)
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Reuse the cell identified in the storyboard for all table cells
-//    UITableViewCell *cell = [[self tableView] dequeueReusableCellWithIdentifier:@"Search Results Cell"];
-    
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Search Results Cell"];
     
     [cell setSelectionStyle:UITableViewCellSelectionStyleDefault];
@@ -121,7 +102,7 @@
     return cell;
 }
 
-#pragma mark - Table View Delegate
+#pragma mark - Table View delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -134,54 +115,9 @@
     NSLog(@"Cell selected");
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"SelectionMadeNotification" object:nil userInfo:userInfo];
-    
-    /**
-    NSURL *url = [presentation presentationURL];
-    UIDocumentInteractionController *controller = [UIDocumentInteractionController interactionControllerWithURL:url];
-    [controller setDelegate:[self mainController]];
-    [controller presentPreviewAnimated:YES];
-    
-    [[[self searchController] searchBar] setText:nil];
-    [[self searchController] setActive:NO];**/
 }
 
-#pragma mark - Document Interaction Delegate
-
-- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
-{
-    return [self mainController];
-}
-
-#pragma mark - Navigation
-
-#pragma mark - Target Actions
-
-#pragma mark - Private Methods
-/**
- - (void)preferredFontsChanged:(NSNotificationCenter *)notification
- {
- // Called whenever a UIContentSizeCategoryDidChangeNotification is sent by the system
- // Addresses situations where the view is already loaded and then the user changes their font accessibility options
- 
- // Reload the table view (the table view data source grabs the preferred fonts)
- [[self tableView] reloadData];
- }**/
-/**
-- (void)filterContentForSearchText:(NSString *)searchText
-{
-    // Filtering algorithm for search queries
-    
-    // Reset any previous results
-    [self setSearchResults:nil];
-    
-    // Use a predicate to parse search query and populate filtered results
-    // "name" refers to the property to search against
-    // "contains[c] means use a CONTAIN search logic, case-insensitive
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"title contains[c] %@", searchText];
-    [self setSearchResults:[((PresentationsCollectionViewController *)self.parentViewController).presentations filteredArrayUsingPredicate:predicate]];
-}**/
-
-#pragma mark - UISearchDisplayResults delegate
+#pragma mark - Search Display Results delegate
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController
 {
@@ -198,14 +134,5 @@
     
     [[self tableView] reloadData];
 }
-
-#pragma mark - UISearchBar delegate
-
-/**
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
-{
-    [searchBar resignFirstResponder];
-}
- */
  
 @end
