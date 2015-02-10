@@ -195,6 +195,7 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(searchSelectionMade:) name:@"SelectionMadeNotification" object:nil];
     
     id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    
     [tracker set:kGAIScreenName value:@"Home Screen"];
     [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
