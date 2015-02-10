@@ -10,6 +10,9 @@
 #import "FXIPresentation.h"
 #import "PresentationsCollectionViewCell.h"
 #import "SearchResultsTableViewController.h"
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
 
 @interface PresentationsCollectionViewController()
 
@@ -176,6 +179,13 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
     }
     
 //    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(searchSelectionMade:) name:@"SelectionMadeNotification" object:nil];
+    
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    
+    GAIDictionaryBuilder *builder = [GAIDictionaryBuilder createScreenView];
+    [builder set:@"start" forKey:kGAISessionControl];
+    [tracker set:kGAIScreenName value:@"Presentations App"];
+    [tracker send:[builder build]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -183,6 +193,10 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
     [super viewWillAppear:animated];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(searchSelectionMade:) name:@"SelectionMadeNotification" object:nil];
+    
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"Home Screen"];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -293,6 +307,10 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
 {
     if (NSClassFromString(@"UISearchController"))
     {
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+        
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"UI_Action" action:@"Searched_PDF" label:nil value:nil] build]];
+        
         SearchResultsTableViewController *searchTableViewController = [[SearchResultsTableViewController alloc] initWithStyle:UITableViewStylePlain];
         [searchTableViewController setFullResults:[self presentations]];
         
@@ -329,6 +347,10 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
         {
             // error
         }
+        
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+        
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"UI_Action" action:@"Viewed_PDF" label:[presentation title] value:nil] build]];
     }
 }
 
@@ -411,6 +433,10 @@ static NSString * const reuseIdentifier = @"Presentation Cell";
     {
         // error
     }
+    
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    
+    [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"UI_Action" action:@"Viewed_PDF" label:[presentation title] value:nil] build]];
 }
 
 @end
